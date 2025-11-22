@@ -1,4 +1,6 @@
 {
   "item.tutorialmod.silver_ingot": "Silver Ingot",
-  "item.tutorialmod.silver_nugget": "Silver Nugget"
+  "item.tutorialmod.silver_nugget": "Silver Nugget",
+
+  "block.tutorialmod.silver_block": "Block of Silver"
 }
