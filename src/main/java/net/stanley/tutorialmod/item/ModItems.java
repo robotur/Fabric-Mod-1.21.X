@@ -13,6 +13,7 @@ import net.stanley.tutorialmod.TutorialMod;
 public class ModItems {
 
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
+    public static final Item SILVER_NUGGET = registerItem("silver_nugget", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
@@ -23,6 +24,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(SILVER_INGOT);
+            entries.add(SILVER_NUGGET);
         });
     }
 }
