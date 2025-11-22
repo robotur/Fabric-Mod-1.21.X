@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorial-mod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "rb(musti)'s software engineer step 4 !!",
+	"authors": [
+		"rbt"
+	],
+	"contact": {
+		"homepage": "https://github.com/robotur",
+		"sources": "https://github.com/robotur/Fabric-FirstMod-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.stanley.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.stanley.tutorialmod.TutorialModDataGenerator"
+		],
+      "client": [
+          "net.stanley.tutorialmod.TutorialModClient"
+      ]
+	},
+	"mixins": [
+		"tutorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
